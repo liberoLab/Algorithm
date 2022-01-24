@@ -1,100 +1,53 @@
-// 주어진 배열을 가지고 다음 질문에 코드를 짜시오
-let animals = [
-    "Aardvark",
-    "Albatross",
-    "Alligator",
-    "Alpaca",
-    "Ant",
-    "Ape",
-    "Armadillo",
-    "Donkey",
-    "Baboon",
-    "Badger",
-    "Barracuda",
-    "Bat",
-    "Bear",
-    "Beaver",
-    "Bee",
-    "Bison",
-    "Cat",
-    "Caterpillar",
-    "Cattle",
-    "Chamois",
-    "Cheetah",
-    "Chicken",
-    "Chimpanzee",
-    "Chinchilla",
-    "Chough",
-    "Clam",
-    "Cobra",
-    "Cockroach",
-    "Cod",
-    "Cormorant",
-    "Dugong",
-    "Dunlin",
-    "Eagle",
-    "Echidna",
-    "Eel",
-    "Eland",
-    "Elephant",
-    "Elk",
-    "Emu",
-    "Falcon",
-    "Ferret",
-    "Finch",
-    "Fish",
-    "Flamingo",
-    "Fly",
-    "Fox",
-    "Frog",
-    "Gaur",
-    "Gazelle",
-    "Gerbil",
-    "Giraffe",
-    "Grasshopper",
-    "Heron",
-    "Herring",
-    "Hippopotamus",
-    "Hornet",
-    "Horse",
-    "Kangaroo",
-    "Kingfisher",
-    "Koala",
-    "Kookabura",
-    "Moose",
-    "Narwhal",
-    "Newt",
-    "Nightingale",
-    "Octopus",
-    "Okapi",
-    "Opossum",
-    "Quail",
-    "Quelea",
-    "Quetzal",
-    "Rabbit",
-    "Raccoon",
-    "Rail",
-    "Ram",
-    "Rat",
-    "Raven",
-    "Red deer",
-    "Sandpiper",
-    "Sardine",
-    "Sparrow",
-    "Spider",
-    "Spoonbill",
-    "Squid",
-    "Squirrel",
-    "Starling",
-    "Stingray",
-    "Tiger",
-    "Toad",
-    "Whale",
-    "Wildcat",
-    "Wolf",
-    "Worm",
-    "Wren",
-    "Yak",
-    "Zebra"
-]
-console.log(animals)
+/*
+let grades1 = [50, 50, 70, 80, 100]
+let grades2 = [100, 95, 90, 80, 70, 60, 50]
+let grades3 = [70, 90, 80]
+let grades4 = [70, 90, 81]
+let grades5 = [100, 99, 98, 97, 96, 95, 94, 93, 91]
+
+let sum = 0
+let temp = 0
+for (item of grades1) {
+    sum += item
+}
+sum = sum / grades1.length
+console.log(sum)
+
+for (item of grades1) {
+    if (item > sum) {
+        temp += 1
+    }
+}
+console.log(temp)
+total = temp / grades1.length * 100
+
+console.log(total.toFixed(3), "%")
+*/
+
+let grades1 = [50, 50, 70, 80, 100]
+let grades2 = [100, 95, 90, 80, 70, 60, 50]
+let grades3 = [70, 90, 80]
+let grades4 = [70, 90, 81]
+let grades5 = [100, 99, 98, 97, 96, 95, 94, 93, 91]
+let total = [grades1, grades2, grades3, grades4, grades5]
+let value = 0
+
+
+for (x of total) {
+    let sum = 0
+    let temp = 0
+    for (item of x) {
+        sum += item
+    }
+    sum = sum / x.length
+
+    for (item of x) {
+        if (item > sum) {
+            temp += 1
+        }
+    }
+
+    value = temp / x.length * 100
+
+    console.log(value.toFixed(3), "%")
+}
