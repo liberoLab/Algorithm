@@ -33,21 +33,21 @@ let total = [grades1, grades2, grades3, grades4, grades5]
 let value = 0
 
 
-for (x of total) {
+for (avg of total) {
     let sum = 0
     let temp = 0
-    for (item of x) {
+    for (item of avg) {
         sum += item
     }
-    sum = sum / x.length
+    sum = sum / avg.length
 
-    for (item of x) {
+    for (item of avg) {
         if (item > sum) {
             temp += 1
         }
     }
 
-    value = temp / x.length * 100
+    value = temp / avg.length * 100
 
     console.log(value.toFixed(3), "%")
 }
