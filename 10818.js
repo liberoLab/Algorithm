@@ -1,3 +1,6 @@
+//https://www.acmicpc.net/problem/10818
+
+
 let num = [20, 10, 35, 30, 7]
 let max, min = 0
 

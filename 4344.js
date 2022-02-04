@@ -1,3 +1,5 @@
+//https://www.acmicpc.net/problem/4344
+
 /*
 let grades1 = [50, 50, 70, 80, 100]
 let grades2 = [100, 95, 90, 80, 70, 60, 50]
