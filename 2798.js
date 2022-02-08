@@ -30,6 +30,7 @@ for (let i = 0; i < card.length; i++) {
             //console.log("sum", sum)
             if (sum > max && sum < num || sum == num) {
                 max = sum
+                console.log(`card[k]:${card[k]} card[j]:${card[j]} card[i]:${card[i]}`)
             }
         }
     }
