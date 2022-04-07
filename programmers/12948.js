@@ -2,7 +2,7 @@
 //https://programmers.co.kr/learn/courses/30/lessons/12948?language=javascript
 
 /*
- 뒤의 4자리만 남기기 위해 for문 hone_number.length - 4 을 조건으로 넣고 temp에 번호 앞 부분을 '*' 로 채워준다.
+ 뒤의 4자리만 남기기 위해 for문에 hone_number.length - 4 을 조건으로 넣고 temp에 번호 앞 부분을 '*' 로 채워준다.
  그 뒤 temp 와 phone_number.slice(-4)로 뒤의 숫자 4자리만 남기고 자른 뒤 합쳐준다
 */
 
