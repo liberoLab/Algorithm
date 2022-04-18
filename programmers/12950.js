@@ -37,6 +37,12 @@ console.log(
 );
 
 /*
+function solution(arr1, arr2) {
+  return arr1.map((x, i) => x.map((y, j) => y + arr2[i][j]));
+}
+*/
+
+/*
 처음에 1번 예제 하드코딩 한것
 
 function solution(arr1, arr2) {
